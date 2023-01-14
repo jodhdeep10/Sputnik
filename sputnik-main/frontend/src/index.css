@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #333;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: white;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+
+img {
+  height: auto;
+  max-width: 50%;
+}
+.home img {
+  height: auto;
+  max-width: 100%;
+}
+.homeimage {
+  text-align: right;
+}
+
+.chats {
+  height: 55vh;
+  width: 80vh;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: rotate(180deg);
+  direction: rtl;
+}
+
+.message-left, .message-right {
+  transform: rotate(180deg);
+  font-size: small;
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: 15px auto;
+  margin-bottom: 65px;
+}
+
+.send-message > input {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+}
+
+.message-left {
+  text-align: left;
+}
+
+.message-left > .message {
+  width: fit-content;
+  text-align: right;
+  color: white;
+  background-color: #4870df;
+  border-radius: 10px;
+  margin: 0 auto 15px 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.message-left > .sender {
+  display: none;
+  width: fit-content;
+  text-align: right;
+  color: black;
+  margin: 15px auto 0 25px;
+  font-size: small;
+  font-weight: normal;
+}
+
+.message-right {
+  text-align: right;
+}
+
+.message-right > .message {
+  width: fit-content;
+  text-align: left;
+  color: black;
+  background-color: #fafafa;
+  border-radius: 10px;
+  margin: 15px 20px 15px auto;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+body {
+  background-color: #00bb77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='.1' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+  background-color: #77aa77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.symptoms {
+  font-weight: 500;
+}
+
+.login-signup form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-signup form > div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.login-signup form label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+.login-signup form input {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+}
+
+.chat form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.chat form > div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.chat form label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+.chat form input {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+}
+
+.send-message{
+
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #00bb77;
+  /* background:#09a188; */
+  color: #fff;
+  text-align: center;
+  flex-grow: 0;
+  padding: 1em 0;
+}
+
+button {
+  background: #333e5a;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  margin: 5px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+footer a {
+  color: #fff;
+}

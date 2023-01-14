@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  api:
+    build: ./backend
+    container_name: apic
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./backend:/app
+      - ./app/node_modules
+    command: npm run start
+    depends_on:
+      - redis
+  model:
+    build: ./model
+    container_name: modelc
+    ports:
+      - '8000:8000'
+  client:
+    build: ./frontend
+    container_name: clientc
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true
+  redis:
+    image: redis:6.2.5-alpine
